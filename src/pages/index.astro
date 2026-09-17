@@ -1,11 +1,41 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout>
-	<Welcome />
+  <main class="min-h-screen bg-background text-primary flex items-center">
+    <div class="container mx-auto px-6 lg:px-8 py-24">
+      <div class="max-w-3xl">
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-primary">
+          Samuel Tefera
+        </h1>
+
+        <h2 class="text-lg sm:text-xl font-medium text-secondary mb-10 text-balance">
+          Software engineer building practical software for businesses — from lean websites to AI-driven automation.
+        </h2>
+
+        <div class="space-y-6 text-base sm:text-base text-secondary leading-relaxed text-balance mb-12">
+          <p>
+            Currently building <strong class="font-medium text-primary">Ranko Metrics</strong>, a free SEO rank tracking tool for solo founders.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-6 text-secondary">
+          <a href="#" class="hover:text-primary transition-colors" aria-label="GitHub">
+            <Icon name="simple-icons:github" class="w-6 h-6" />
+          </a>
+          <a href="#" class="hover:text-primary transition-colors" aria-label="LinkedIn">
+            <Icon name="simple-icons:linkedin" class="w-6 h-6" />
+          </a>
+          <a href="#" class="hover:text-primary transition-colors" aria-label="X (Twitter)">
+            <Icon name="simple-icons:x" class="w-6 h-6" />
+          </a>
+          <a href="#" class="hover:text-primary transition-colors" aria-label="Telegram">
+            <Icon name="simple-icons:telegram" class="w-6 h-6" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
 </Layout>
