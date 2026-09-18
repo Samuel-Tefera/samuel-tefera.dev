@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { Icon } from 'astro-icon/components';
 import ProjectCard from '../components/ProjectCard.astro';
+import WorkItem from '../components/WorkItem.astro';
 ---
 
 <Layout>
@@ -45,7 +46,7 @@ import ProjectCard from '../components/ProjectCard.astro';
     <div class="container mx-auto px-4 lg:px-8">
       <div class="mb-20 text-center">
         <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-primary">
-          Selected Works
+          Selected Work
         </h2>
       </div>
 
@@ -97,6 +98,49 @@ import ProjectCard from '../components/ProjectCard.astro';
           ]}
           liveUrl="#"
           codeUrl="#"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-background py-16 lg:py-24">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="mb-20 text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-primary">
+          Work
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 max-w-7xl mx-auto">
+        <WorkItem
+          date="Sept 2026 — Present"
+          role="Software Engineering Intern"
+          company="EagleLion System Technology"
+          description="Started as a software engineering intern, contributing to real-world engineering projects across the internship term."
+          tags={["Python", "Next.js", "TypeScript"]}
+        />
+
+        <WorkItem
+          date="2025 — Present"
+          role="Backend Engineer & DevOps"
+          company="WCUTS"
+          description="Design and build backend systems — REST and GraphQL APIs, database design, and deployment pipelines. Also mentor WCU tech students on engineering practices."
+          tags={["Python", "TypeScript", "Docker", "Git", "Linux"]}
+        />
+
+        <WorkItem
+          date="2023 — Present"
+          role="B.Sc. Software Engineering"
+          company="Wachemo University"
+          description="Studying software engineering, with a focus on systems design and practical application development."
+        />
+
+        <WorkItem
+          date="2024"
+          role="AI & Career Essentials"
+          company="ALX"
+          description="Completed a program covering applied AI and career-readiness skills for the tech industry."
         />
       </div>
     </div>
