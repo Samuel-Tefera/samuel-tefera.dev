@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Icon } from 'astro-icon/components';
+import ProjectCard from '../components/ProjectCard.astro';
 ---
 
 <Layout>
@@ -38,4 +39,66 @@ import { Icon } from 'astro-icon/components';
       </div>
     </div>
   </main>
+
+  <!-- Selected Works -->
+  <section id="projects" class="bg-background pt-8 pb-24 lg:pt-24 lg:pb-32">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="mb-20 text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-primary">
+          Selected Works
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-7xl mx-auto">
+        <ProjectCard
+          title="Lensey"
+          year="2025"
+          description="Business intelligence for SMEs that tracks sales and expenses and surfaces AI-driven insights for decision-making."
+          tags={[
+            { icon: "simple-icons:python", label: "Python" },
+            { icon: "simple-icons:nextdotjs", label: "Next.js" },
+          ]}
+          liveUrl="#"
+          codeUrl="#"
+        />
+
+        <ProjectCard
+          title="PolicyWatch-ET"
+          year="2025"
+          description="Scrapes Ethiopian government policy and uses AI to summarize it, making legal and regulatory changes easier to track."
+          tags={[
+            { icon: "simple-icons:python", label: "Python" },
+            { icon: "simple-icons:astro", label: "Astro" },
+          ]}
+          liveUrl="#"
+          codeUrl="#"
+        />
+
+        <ProjectCard
+          title="Easy-Study"
+          year="2024"
+          description="AI study tool that turns uploaded PDFs into plain-language explanations, examples, and analogies to save students time."
+          tags={[
+            { icon: "simple-icons:python", label: "Python" },
+            { icon: "simple-icons:react", label: "React" },
+            { icon: "simple-icons:typescript", label: "TypeScript" },
+          ]}
+          liveUrl="#"
+          codeUrl="#"
+        />
+
+        <ProjectCard
+          title="Class Coordinator Bot"
+          year="2024"
+          description="Automates the daily coordination work of a university class representative, right inside Telegram."
+          tags={[
+            { icon: "simple-icons:python", label: "Python" },
+            { icon: "simple-icons:telegram", label: "Telegram API" },
+          ]}
+          liveUrl="#"
+          codeUrl="#"
+        />
+      </div>
+    </div>
+  </section>
 </Layout>
