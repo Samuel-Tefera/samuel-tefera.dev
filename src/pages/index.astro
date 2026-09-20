@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Icon } from 'astro-icon/components';
 import ProjectCard from '../components/ProjectCard.astro';
 import WorkItem from '../components/WorkItem.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
@@ -25,16 +26,16 @@ import WorkItem from '../components/WorkItem.astro';
 
         <div class="flex flex-wrap items-center gap-6 text-secondary">
           <a href="#" class="hover:text-primary transition-colors" aria-label="GitHub">
-            <Icon name="simple-icons:github" class="w-6 h-6" />
+            <Icon name="simple-icons:github" class="w-5 h-5" />
           </a>
           <a href="#" class="hover:text-primary transition-colors" aria-label="LinkedIn">
-            <Icon name="simple-icons:linkedin" class="w-6 h-6" />
+            <Icon name="simple-icons:linkedin" class="w-5 h-5" />
           </a>
           <a href="#" class="hover:text-primary transition-colors" aria-label="X (Twitter)">
-            <Icon name="simple-icons:x" class="w-6 h-6" />
+            <Icon name="simple-icons:x" class="w-5 h-5" />
           </a>
           <a href="#" class="hover:text-primary transition-colors" aria-label="Telegram">
-            <Icon name="simple-icons:telegram" class="w-6 h-6" />
+            <Icon name="simple-icons:telegram" class="w-5 h-5" />
           </a>
         </div>
       </div>
@@ -202,4 +203,5 @@ import WorkItem from '../components/WorkItem.astro';
       </div>
     </div>
   </section>
+  <Footer />
 </Layout>
