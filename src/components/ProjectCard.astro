@@ -15,11 +15,11 @@ const { title, description, tags, year, liveUrl, codeUrl, image } = Astro.props;
 ---
 
 <article class="flex flex-col sm:flex-row border-[0.5px] border-border rounded-xl overflow-hidden bg-surface transition-all duration-300 hover:border-secondary hover:shadow-[0_2px_12px_rgba(0,0,0,0.06)] dark:hover:shadow-[0_2px_12px_rgba(255,255,255,0.03)] group">
-  <div class="flex-none sm:flex-[0_0_42%] w-full sm:w-auto aspect-[16/9] sm:aspect-[4/3] overflow-hidden border-b-[0.5px] sm:border-b-0 sm:border-r-[0.5px] border-border bg-background flex items-center justify-center">
+  <div class="flex-none sm:flex-[0_0_42%] w-full sm:w-auto aspect-video overflow-hidden border-b-[0.5px] sm:border-b-0 sm:border-r-[0.5px] border-border bg-background flex items-center justify-center">
     <img
       src={image}
       alt={`${title} screenshot`}
-      class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+      class="w-full h-full object-fill transition-transform duration-500 group-hover:scale-[1.05]"
       loading="lazy"
     />
   </div>
