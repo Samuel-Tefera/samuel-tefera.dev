@@ -14,8 +14,8 @@ interface Props {
 const { title, description, tags, year, liveUrl, codeUrl, image } = Astro.props;
 ---
 
-<article class="flex flex-col sm:flex-row border-[0.5px] border-border rounded-xl overflow-hidden bg-surface transition-all duration-300 hover:border-secondary hover:shadow-[0_2px_12px_rgba(0,0,0,0.06)] dark:hover:shadow-[0_2px_12px_rgba(255,255,255,0.03)] group">
-  <div class="flex-none sm:flex-[0_0_42%] w-full sm:w-auto aspect-video overflow-hidden border-b-[0.5px] sm:border-b-0 sm:border-r-[0.5px] border-border bg-background flex items-center justify-center">
+<article class="flex flex-col md:flex-row border-[0.5px] border-border rounded-xl overflow-hidden bg-surface transition-all duration-300 hover:border-secondary hover:shadow-[0_2px_12px_rgba(0,0,0,0.06)] dark:hover:shadow-[0_2px_12px_rgba(255,255,255,0.03)] group">
+  <div class="flex-none md:flex-[0_0_42%] w-full md:w-auto aspect-video overflow-hidden border-b-[0.5px] md:border-b-0 md:border-r-[0.5px] border-border bg-background flex items-center justify-center">
     <img
       src={image}
       alt={`${title} screenshot`}
@@ -24,33 +24,33 @@ const { title, description, tags, year, liveUrl, codeUrl, image } = Astro.props;
     />
   </div>
 
-  <div class="flex-1 p-4 sm:p-5 sm:px-6 flex flex-col justify-center min-w-0">
-    <div class="flex items-baseline justify-between gap-3 mb-2">
-      <h3 class="m-0 text-[17px] font-medium text-primary tracking-[-0.01em]">{title}</h3>
-      {year && <span class="text-[11px] font-mono text-secondary shrink-0">{year}</span>}
+  <div class="flex-1 p-4 sm:p-5 md:px-6 flex flex-col justify-center min-w-0">
+    <div class="flex items-baseline justify-between gap-2 sm:gap-3 mb-1.5 sm:mb-2">
+      <h3 class="m-0 text-[15px] sm:text-[17px] font-medium text-primary tracking-[-0.01em]">{title}</h3>
+      {year && <span class="text-[10px] sm:text-[11px] font-mono text-secondary shrink-0">{year}</span>}
     </div>
 
-    <p class="m-0 mb-3.5 text-[13.5px] leading-[1.6] text-secondary">{description}</p>
+    <p class="m-0 mb-3 sm:mb-3.5 text-[12.5px] sm:text-[13.5px] leading-[1.6] text-secondary">{description}</p>
 
-    <div class="flex items-center justify-between gap-3">
-      <div class="flex flex-wrap gap-2">
+    <div class="flex items-center justify-between gap-2 sm:gap-3">
+      <div class="flex flex-wrap gap-1.5 sm:gap-2">
         {tags.map((tag) => (
-          <span class="text-[11px] font-mono text-secondary px-2 py-[3px] border-[0.5px] border-border rounded-md whitespace-nowrap" title={tag.label}>
+          <span class="text-[10px] sm:text-[11px] font-mono text-secondary px-1.5 sm:px-2 py-[2px] sm:py-[3px] border-[0.5px] border-border rounded-md whitespace-nowrap" title={tag.label}>
             {tag.label}
           </span>
         ))}
       </div>
 
-      <div class="flex items-center gap-3 shrink-0">
+      <div class="flex items-center gap-2.5 sm:gap-3 shrink-0">
         {codeUrl && (
           <a
             href={codeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            class="text-[12.5px] text-primary flex items-center gap-1 no-underline transition-colors duration-200 hover:text-secondary"
+            class="text-[11.5px] sm:text-[12.5px] text-primary flex items-center gap-1 no-underline transition-colors duration-200 hover:text-secondary"
             aria-label={`${title} source code`}
           >
-            <Icon name="simple-icons:github" class="w-[14px] h-[14px]" />
+            <Icon name="simple-icons:github" class="w-3.5 sm:w-[14px] h-3.5 sm:h-[14px]" />
             <span>Code</span>
           </a>
         )}
@@ -59,10 +59,10 @@ const { title, description, tags, year, liveUrl, codeUrl, image } = Astro.props;
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            class="text-[12.5px] text-primary flex items-center gap-1 no-underline transition-colors duration-200 hover:text-accent"
+            class="text-[11.5px] sm:text-[12.5px] text-primary flex items-center gap-1 no-underline transition-colors duration-200 hover:text-accent"
             aria-label={`${title} live demo`}
           >
-            <svg class="w-[14px] h-[14px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <svg class="w-3.5 sm:w-[14px] h-3.5 sm:h-[14px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-4.5-4.5h6m0 0v6m0-6L9.75 14.25" />
             </svg>
             <span>Live</span>

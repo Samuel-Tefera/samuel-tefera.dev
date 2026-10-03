@@ -9,34 +9,34 @@ import TerminalStatus from '../components/TerminalStatus.astro';
 
 <Layout>
   <main class="min-h-screen bg-background text-primary flex items-center">
-    <div class="container mx-auto px-6 lg:px-8 py-24">
-      <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8">
-        <div class="max-w-3xl">
-          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-primary">
+    <div class="container mx-auto px-2 sm:px-6 lg:px-8 py-20 sm:py-24">
+      <div class="flex flex-col lg:flex-row items-center lg:items-center justify-between gap-10 lg:gap-8">
+        <div class="max-w-3xl text-center lg:text-left">
+          <h1 class="text-2xl sm:text-4xl lg:text-6xl font-bold tracking-tight mb-3 sm:mb-4 text-primary">
             Samuel Tefera
           </h1>
 
-          <h2 class="text-lg sm:text-xl font-medium text-secondary mb-10 text-balance">
+          <h2 class="text-sm sm:text-lg lg:text-xl font-medium text-secondary mb-5 sm:mb-10 text-balance">
             Software engineer building practical software for businesses — from lean websites to AI-driven automation.
           </h2>
 
-          <div class="space-y-6 text-base sm:text-base text-secondary leading-relaxed text-balance mb-12">
+          <div class="space-y-4 sm:space-y-6 text-[13px] sm:text-base text-secondary leading-relaxed text-balance mb-6 sm:mb-12">
             <p>
               Currently building <strong class="font-medium text-primary">Ranko Metrics</strong>, a free SEO rank tracking tool for solo founders.
             </p>
           </div>
 
-          <div class="flex flex-wrap items-center gap-6 text-secondary">
-            <a href="https://github.com/Samuel-Tefera" class="hover:text-primary transition-colors" aria-label="GitHub">
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-5 sm:gap-6 text-secondary">
+            <a href="https://github.com/Samuel-Tefera" class="hover:text-primary transition-colors p-1" aria-label="GitHub">
               <Icon name="simple-icons:github" class="w-5 h-5" />
             </a>
-            <a href="https://www.linkedin.com/in/samueltefera" class="hover:text-primary transition-colors" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/samueltefera" class="hover:text-primary transition-colors p-1" aria-label="LinkedIn">
               <Icon name="simple-icons:linkedin" class="w-5 h-5" />
             </a>
-            <a href="https://x.com/samutef" class="hover:text-primary transition-colors" aria-label="X (Twitter)">
+            <a href="https://x.com/samutef" class="hover:text-primary transition-colors p-1" aria-label="X (Twitter)">
               <Icon name="simple-icons:x" class="w-5 h-5" />
             </a>
-            <a href="https://t.me/samuelTefera7" class="hover:text-primary transition-colors" aria-label="Telegram">
+            <a href="https://t.me/samuelTefera7" class="hover:text-primary transition-colors p-1" aria-label="Telegram">
               <Icon name="simple-icons:telegram" class="w-5 h-5" />
             </a>
           </div>
@@ -50,15 +50,15 @@ import TerminalStatus from '../components/TerminalStatus.astro';
   </main>
 
   <!-- Selected Works -->
-  <section id="projects" class="bg-background pt-8 pb-24 lg:pt-24 lg:pb-32">
-    <div class="container mx-auto px-4 lg:px-8">
-      <div class="mb-20 text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-primary">
+  <section id="projects" class="bg-background pt-6 pb-16 sm:pt-8 sm:pb-24 lg:pt-24 lg:pb-32">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10 sm:mb-16 lg:mb-20 text-center">
+        <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-primary">
           Selected Work
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
         <ProjectCard
           title="Lensey"
           year="2025"
@@ -113,15 +113,15 @@ import TerminalStatus from '../components/TerminalStatus.astro';
   </section>
 
   <!-- Work -->
-  <section id="work" class="bg-background py-16 lg:py-24">
-    <div class="container mx-auto px-6 lg:px-8">
-      <div class="mb-20 text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-primary">
+  <section id="work" class="bg-background py-12 sm:py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10 sm:mb-16 lg:mb-20 text-center">
+        <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-primary">
           Work
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 max-w-7xl mx-auto">
         <WorkItem
           date="Sept 2026 — Present"
           role="Software Engineering Intern"
@@ -156,15 +156,15 @@ import TerminalStatus from '../components/TerminalStatus.astro';
   </section>
 
   <!-- About -->
-  <section id="about" class="bg-background py-16 lg:py-24">
-    <div class="container mx-auto px-6 lg:px-8">
-      <div class="mb-12 text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-primary">
+  <section id="about" class="bg-background py-12 sm:py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-8 sm:mb-12 text-center">
+        <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-primary">
           About
         </h2>
       </div>
 
-      <div class="max-w-3xl mx-auto text-base sm:text-lg text-secondary leading-relaxed space-y-6">
+      <div class="max-w-3xl mx-auto text-[14px] sm:text-base lg:text-lg text-secondary leading-relaxed space-y-4 sm:space-y-6 text-pretty">
         <p>
           Based in Addis Ababa, Ethiopia. Currently a 4th-year B.Sc. Software Engineering student, balancing coursework with real, hands-on work.
         </p>
@@ -185,26 +185,26 @@ import TerminalStatus from '../components/TerminalStatus.astro';
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="bg-background py-16 lg:py-24">
-    <div class="container mx-auto px-6 lg:px-8">
-      <div class="mb-12 text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-primary">
+  <section id="contact" class="bg-background py-12 sm:py-16 lg:py-24">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-8 sm:mb-12 text-center">
+        <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-primary">
           Get in touch
         </h2>
       </div>
 
-      <div class="max-w-2xl mx-auto text-center text-base sm:text-lg text-secondary leading-relaxed">
-        <p class="mb-10 text-balance">
+      <div class="max-w-2xl mx-auto text-center text-[14px] sm:text-base lg:text-lg text-secondary leading-relaxed">
+        <p class="mb-8 sm:mb-10 text-balance">
           Open to freelance work, collaborations, or just a good conversation about what you're building.
         </p>
 
-        <div class="flex flex-wrap items-center justify-center gap-8">
+        <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
           <a href="mailto:samuelteferab@gmail.com" class="flex items-center gap-2 hover:text-primary transition-colors font-medium">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 sm:w-5 sm:h-5"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             <span>Email</span>
           </a>
           <a href="https://t.me/samuelTefera7" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-primary transition-colors font-medium">
-            <Icon name="simple-icons:telegram" class="w-5 h-5" />
+            <Icon name="simple-icons:telegram" class="w-4 h-4 sm:w-5 sm:h-5" />
             <span>Telegram</span>
           </a>
         </div>
