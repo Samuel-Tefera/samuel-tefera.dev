@@ -58,19 +58,7 @@ import TerminalStatus from '../components/TerminalStatus.astro';
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
-        <ProjectCard
-          title="Lensey"
-          year="2025"
-          description="Business intelligence for SMEs that tracks sales and expenses and surfaces AI-driven insights for decision-making."
-          tags={[
-            { icon: "simple-icons:python", label: "Python" },
-            { icon: "simple-icons:nextdotjs", label: "Next.js" },
-          ]}
-          codeUrl="https://github.com/Samuel-Tefera/lensey"
-          image="/images/projects/lensey.png"
-        />
-
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 max-w-7xl mx-auto">
         <ProjectCard
           title="PolicyWatch-ET"
           year="2025"
@@ -82,6 +70,18 @@ import TerminalStatus from '../components/TerminalStatus.astro';
           liveUrl="https://policy-watch.pro.et/"
           codeUrl="https://github.com/Samuel-Tefera/policy-watch-et"
           image="/images/projects/policy-watch-et.png"
+        />
+
+        <ProjectCard
+          title="Lensey"
+          year="2025"
+          description="Business intelligence for SMEs that tracks sales and expenses and surfaces AI-driven insights for decision-making."
+          tags={[
+            { icon: "simple-icons:python", label: "Python" },
+            { icon: "simple-icons:nextdotjs", label: "Next.js" },
+          ]}
+          codeUrl="https://github.com/Samuel-Tefera/lensey"
+          image="/images/projects/lensey.png"
         />
 
         <ProjectCard
@@ -108,6 +108,12 @@ import TerminalStatus from '../components/TerminalStatus.astro';
           codeUrl="https://github.com/Samuel-Tefera/class-coordinator-bot"
           image="/images/projects/class-coordinator-bot.png"
         />
+      </div>
+
+      <div class="mt-8 sm:mt-12 text-center">
+        <a href="https://github.com/Samuel-Tefera?tab=repositories" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[14px] sm:text-base font-medium text-secondary hover:text-primary transition-colors">
+          all my projects here <span>&rarr;</span>
+        </a>
       </div>
     </div>
   </section>
