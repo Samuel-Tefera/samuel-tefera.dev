@@ -47,11 +47,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-text-secondary);
+  background-color: var(--color-border-theme);
   border-radius: 10px;
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--color-text-secondary) transparent;
+  scrollbar-color: var(--color-border-theme) transparent;
 }
